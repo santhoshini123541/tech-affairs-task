@@ -1,0 +1,227 @@
+.clubs-header {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(-45deg, #1a1a40, #0f0f3e, #1a1a40, #0f0f3e);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #00ffff;
+  overflow: hidden;
+}
+
+.clubs-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.3);
+  opacity: 0;
+  transform: rotateX(90deg);
+  animation: flipIn 1s ease-out forwards;
+}
+
+.clubs-header p {
+  font-size: 1.2rem;
+  color: #66ffff;
+  text-shadow: 1px 1px 6px rgba(0, 255, 255, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeRise 1.2s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes flipIn {
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes fadeRise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+footer {
+  width: 100%;
+ background: linear-gradient(90deg, #0a0f1a, #111);
+  color: #00ffff;
+
+  padding: 20px 10px; 
+  text-align: center;
+  border-top: 2px solid #00ffff; 
+  font-size: 0.9rem;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #66ffff;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.clubs-header {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(-45deg, #1a1a40, #0f0f3e, #1a1a40, #0f0f3e);
+  background-size: 400% 400%;
+  color: #00ffff;
+  margin-bottom: 60px;
+}
+
+.clubs-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.3);
+}
+
+.clubs-header p {
+  font-size: 1.2rem;
+  color: #66ffff;
+  text-shadow: 1px 1px 6px rgba(0, 255, 255, 0.3);
+}
+
+
+.clubs-list {
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+
+.club-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #111a44;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
+
+
+.club-card.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.club-image img {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.club-info {
+  flex: 1;
+  color: #66ffff;
+}
+
+.club-info h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .club-card,
+  .club-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .club-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+
+nav {
+  background: #111a44;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 2px 10px rgba(0,255,255,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #66ffff;
+}
+.social-icons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #e1306c; 
+  font-size: 1.8rem; 
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #c13584; 
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer div a {
+  font-size: 2rem;     
+  margin: 0 15px;       
+  color: inherit;       
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
